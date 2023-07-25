@@ -11,7 +11,7 @@ function UrlForm() {
   const fetchUrlData = async () => {
     try {
       setLoading(true);
-      const response = await axios.post('http://1012.pythonanywhere.com/5001/scrape', { url });
+      const response = await axios.post('http://1012.pythonanywhere.com/scrape', { url });
       setScrapedData(response.data);
       setLoading(false);
     } catch (error) {
