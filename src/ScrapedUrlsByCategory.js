@@ -12,7 +12,7 @@ function ScrapedUrlsByCategory() {
   useEffect(() => {
     // Fetch categories from the Flask server
     axios
-      .get('http://localhost:5000/categories')
+      .get('https://1012.pythonanywhere.com:5000/categories')
       .then((response) => {
         setCategories(response.data);
       })
